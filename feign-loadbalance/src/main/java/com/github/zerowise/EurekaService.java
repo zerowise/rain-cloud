@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  ** @createtime : 2018/10/17下午7:56
  **/
-@FeignClient("EUREKA-CLIENT")
+@FeignClient(name = "EUREKA-CLIENT", fallback = EurekaServiceImpl.class)
 public interface EurekaService {
 
     @RequestMapping("/")
