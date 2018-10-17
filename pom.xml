@@ -13,6 +13,7 @@
         <module>eureka-client</module>
         <module>cloud-config-server</module>
         <module>cloud-config-client</module>
+        <module>ribbon-loadbalance</module>
     </modules>
 
     <parent>
