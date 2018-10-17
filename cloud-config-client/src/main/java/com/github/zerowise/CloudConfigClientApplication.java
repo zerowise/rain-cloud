@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class CloudConfigClientApplication {
-    @Value("${book.name}")
+    @Value("${book}")
     private String bookName;
 
     @RequestMapping("/")
     public String home() {
-        return "i am read book:" + bookName;
+        return bookName;
     }
     public static void main(String[] args) {
         SpringApplication.run(CloudConfigClientApplication.class, args);
