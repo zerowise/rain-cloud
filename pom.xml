@@ -15,6 +15,7 @@
         <module>cloud-config-client</module>
         <module>ribbon-loadbalance</module>
         <module>zuul-route</module>
+        <module>gateway-route</module>
     </modules>
 
     <parent>
